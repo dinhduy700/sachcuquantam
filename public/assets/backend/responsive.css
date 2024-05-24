@@ -1,0 +1,59 @@
+@media (max-width: 991px) {
+  .navbar {
+    width: 100%;
+    left: 0;
+  }
+
+  .sidebar {
+    z-index: 999;
+    margin-left: -240px;
+    visibility: hidden;
+  }
+
+  .navbar #jsSidebarToggler {
+    display: flex;
+    visibility: unset;
+  }
+
+  .main-content,
+  .fix-div,
+  footer {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .padding-filter {
+    padding: 0;
+  }
+
+  /* MAIN CONTENT */
+  .main-content .filter-wrapper .search-form {
+    display: unset!important;
+  }
+
+  .main-content .filter-wrapper .search-form .btn-group .form-group {
+    margin-left: 0;
+  }
+
+  .main-content .filter-wrapper .search-form  .btn-group.padding-filter,
+  .main-content .filter-wrapper .search-form .btn-group .form-group {
+    width: 100%;
+  }
+
+  .main-content .filter-wrapper .btn-group .btn-search {
+    margin-top: 10px;
+  }
+
+  .sidebar .sidebar-header .sidebar-toggler span,
+  .navbar .sidebar-toggler span {
+      background: #000;
+  }
+
+ .card-body .form-group label {
+    text-align: left;
+  }
+}

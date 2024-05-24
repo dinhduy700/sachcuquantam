@@ -1,0 +1,32 @@
+# Laravel 4 specific
+bootstrap/compiled.php
+app/storage/
+
+# Laravel 5 & Lumen specific
+/public/storage
+/public/hot
+.env
+.env.backup
+Homestead.yaml
+Homestead.json
+
+# ignore OS generated files
+ehthumbs.db
+Thumbs.db
+.DS_Store
+.DS_Store?
+
+# ignore other files
+/.idea
+/.vscode
+/.vagrant
+torage/*.key
+.phpunit.result.cache
+docker-compose.override.yml
+/vendor
+/node_modules
+npm-debug.log
+yarn-error.log
+/logs
+
+composer.lock
