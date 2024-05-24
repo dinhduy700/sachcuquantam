@@ -1,4 +1,4 @@
-# THP
+# sachcuquantam
 
 ## Installation
 
@@ -7,12 +7,12 @@ For system requirements you check [Laravel Requirement](https://laravel.com/docs
 
 ### 1 - Clone the repository.
 Clone repo for this project locally
-`git clone git@gitlab.com:oxpersoft/thp.git`
+`git clone https://github.com/duynguyen3009/sachcuquantam.git`
 
 ### 2 - Install Composer Dependencies.
 Open your terminal and run this command
 ```sh
-cd thp
+cd sachcuaquantam
 composer install
 ```
 
