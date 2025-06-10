@@ -1,19 +1,19 @@
 @section('title-page')
-    {{$productDetail->translation->seo_title ?? ($productDetail->translation->product_name ?? ($settings->translation->seo_title ?? 'Galen Official Store'))}}
+    {{$productDetail->translation->seo_title ?? ($productDetail->translation->product_name ?? ($settings->translation->seo_title ?? 'SachCuQuanTam'))}}
 @endsection
 
 @section('seo')
     <meta name="description" content="{{ $productDetail->translation->seo_description ?? ($settings->translation->seo_description ?? '') }}">
     <meta name="keywords" content="{{$productDetail->translation->seo_keywords ?? ($settings->translation->seo_keywords ?? '') }}">
     <meta property="og:image" content="{{asset($productDetail->product_image ?? ($settings->logo ?? 'assets/images/favicon.ico'))}}" />
-    <meta property="og:title" content="{{$productDetail->translation->seo_title ?? ($productDetail->translation->product_name ?? ($settings->translation->seo_title ?? 'Galen Official Store'))}}" />
-    <meta property="og:site_name" content="{{$settings->translation->seo_title ?? 'Galen Official Store'}}" />
+    <meta property="og:title" content="{{$productDetail->translation->seo_title ?? ($productDetail->translation->product_name ?? ($settings->translation->seo_title ?? 'SachCuQuanTam'))}}" />
+    <meta property="og:site_name" content="{{$settings->translation->seo_title ?? 'SachCuQuanTam'}}" />
     <meta property="og:description" content="{{$productDetail->translation->seo_description ?? ($settings->translation->seo_description ?? '')}}" />
 @endsection
 
 @extends('frontend.layouts.master')
 @section('content')
-@include('frontend.layouts.banner', ['listBanner', array()])
+{{-- @include('frontend.layouts.banner', ['listBanner', array()]) --}}
 <div class="detail-page">
     <div class="container">
         <div class="row detail-main">

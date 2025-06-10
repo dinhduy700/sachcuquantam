@@ -29,9 +29,22 @@ php artisan key:generate
 2. Generate config
 `php artisan db:seed`
 
-### 5 - Run Server
+### 5 - Run Server, if you use docker, you can skip this step
 1. `php artisan serve` or Laravel Homestead
 2. Visit `localhost:8000` in browser
 
 ### 6 - Create storage
 `php artisan storage:link`
+
+### 7 - run Docker
+docker-compose up -d
+
+### 8 - stop Docker
+docker-compose down
+
+### 9 - run command artisan
+docker-compose exec workspace php artisan cache:clear
+
+### 10 - run seeder
+docker-compose exec workspace php artisan db:seed --class=PagesTableSeeder
+docker-compose exec workspace php artisan db:seed --class=UsersTableSeeder

@@ -14,7 +14,7 @@
 @extends('frontend.layouts.master')
 
 @section('content')
-@include('frontend.layouts.banner', ['listBanner' => $banners])
+{{-- @include('frontend.layouts.banner', ['listBanner' => $banners]) --}}
 <div class="contact-page">
     <div class="support-info mb-4">
         <div class="container text-center">

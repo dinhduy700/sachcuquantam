@@ -42,7 +42,7 @@
                                 {{__('frontend.shipping')}}
                             </div>
                             <div class="policy-sumary">
-                                {{__('frontend.shipping_call')}} <a class="fone" href="tel:0912739249">0912739249</a> {{__('frontend.shipping_des')}}
+                                {{__('frontend.shipping_call')}} <a class="fone" href="tel:0937446418">0937446418</a> {{__('frontend.shipping_des')}}
                             </div>
                         </div>
                     </div>
@@ -147,9 +147,9 @@
                     </div>
                     <div id="copyright" class="col-lg-12 a-center fot_copyright">
                         <span class="wsp">
-                            <span class="mobile">© Design By Galen.com
+                            {{-- <span class="mobile">© Design By Galen.com
                                 <span class="dash"> | </span>
-                            </span>
+                            </span> --}}
                         </span>
                     </div>
                 </div>

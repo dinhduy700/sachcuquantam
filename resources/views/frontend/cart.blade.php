@@ -11,7 +11,7 @@
 @endsection
 @extends('frontend.layouts.master')
 @section('content')
-@include('frontend.layouts.banner', ['listBanner', array()])
+{{-- @include('frontend.layouts.banner', ['listBanner', array()]) --}}
 <div class="cart-page">
     <div class="container">
         <div class="content-cart">

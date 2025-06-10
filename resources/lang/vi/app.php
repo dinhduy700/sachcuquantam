@@ -148,7 +148,7 @@ return [
         'email' => 'Email',
         'time-work' => 'Thời gian làm việc',
         'title-div' => "<h1>Gửi thông tin cho chúng tôi!</h1>
-                        <p>Hãy liên hệ ngay với chúng tôi để nhận được thông tin tư vấn khuyến mãi và ưu đãi mới nhất từ Galen</p>",
+                        <p>Hãy liên hệ ngay với chúng tôi để nhận được thông tin tư vấn khuyến mãi và ưu đãi mới nhất từ SachCuQuanTam</p>",
         'input-name' => 'Họ và tên',
         'input-phone' => 'Số điện thoại',
         'input-email' => 'Email',

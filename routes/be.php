@@ -20,6 +20,7 @@ use App\Http\Controllers\Backend\BrandController;
 use App\Http\Controllers\Backend\ContactController;
 use App\Http\Controllers\Backend\CommentController;
 use App\Http\Controllers\Backend\SubscribeController;
+use App\Http\Controllers\Backend\TestEventListenerController;
 
 Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['auth', 'admin.role']], function () {
     \UniSharp\LaravelFilemanager\Lfm::routes();
@@ -42,6 +43,10 @@ Route::group(
                 'middleware' => ['admin.locale', 'auth', 'admin.role']
             ],
             function () {
+
+                Route::post('/test-event-listener', [TestEventListenerController::class, 'testEventListener'])->name('test_event_listener');
+
+
                 Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
 
                 Route::get('load-notifications', [AuthController::class, 'loadNotifications'])->name('notification.load');

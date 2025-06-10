@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 
-    <title>THP | Admin Page.</title>
+    <title>Admin Page</title>
 
     <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Montserrat'>
     <link rel="stylesheet" type="text/css" href="{{ url('assets/libs/bootstrap/css/bootstrap.min.css') }}">

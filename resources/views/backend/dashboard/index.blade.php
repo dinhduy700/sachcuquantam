@@ -27,6 +27,10 @@
       </div>
     </div>
   </div>
+<form action="{{ route('admin.test_event_listener') }}" method="post">
+  @csrf
+  <button  class="btn btn-primary">Event-Listener</button>
+</form>
 
   <div class="row">
     <div class="col-12 mb-3">

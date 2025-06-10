@@ -124,6 +124,6 @@
 <div style="margin-top: 30px;">
 	<div style="font-size: 24px;
 	text-align: center; font-style: italic;">
-		CẢM ƠN BẠN ĐÃ TIN TƯỞNG VÀ SỬ DỤNG SẢN PHẨM CỦA GALEN
+		CẢM ƠN BẠN ĐÃ TIN TƯỞNG VÀ SỬ DỤNG SẢN PHẨM CỦA SachCuQuanTam
 	</div>
 </div>

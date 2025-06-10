@@ -110,7 +110,7 @@
                 </div>
                 <div class="header-search">
                     <form id="search-bar" method="get" action="{{ route('search.index') }}">
-                        <input type="text" placeholder="{{__('frontend.search')}}..." name="search">
+                        <input type="text" placeholder="{{__('frontend.search')}}..." name="search" value="{{ request('search', '') }}">
                         <button type="submit">
                             <i class="fa fa-search"></i>
                         </button>
@@ -180,11 +180,11 @@
                     <li>
                         <a href="{{route('category-all')}}">{{__('frontend.product')}}</a>
                     </li>
-                    <li>
+                    {{-- <li>
                         <a href="{{ url('/'.
                                 ( app()->getLocale() == config('constants.lang_default') ? '' : app()->getLocale(). '/' ) . __('route.video')
                                 )  }}">{{__('frontend.video')}}</a>
-                    </li>
+                    </li> --}}
                     <li>
                         <a href="{{ url('/'.
                                 ( app()->getLocale() == config('constants.lang_default') ? '' : app()->getLocale(). '/' ) . __('route.news')

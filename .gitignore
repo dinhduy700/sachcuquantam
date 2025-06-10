@@ -22,7 +22,7 @@ Thumbs.db
 /.vagrant
 torage/*.key
 .phpunit.result.cache
-docker-compose.override.yml
+docker-compose.yml
 /vendor
 /node_modules
 npm-debug.log
@@ -30,3 +30,6 @@ yarn-error.log
 /logs
 
 composer.lock
+
+
+/docker

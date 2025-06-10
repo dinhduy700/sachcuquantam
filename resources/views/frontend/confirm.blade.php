@@ -11,7 +11,7 @@
 @endsection
 @extends('frontend.layouts.master')
 @section('content')
-@include('frontend.layouts.banner', ['listBanner', array()])
+{{-- @include('frontend.layouts.banner', ['listBanner', array()]) --}}
 <div class="container">
 <div class="detail-page">
 	<div style="margin-top: 30px;">

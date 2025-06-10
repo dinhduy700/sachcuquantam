@@ -1,13 +1,13 @@
 @section('title-page')
-    {{$detailNews->translation->seo_title ?? ($detailNews->translation->news_title ?? ($settings->translation->seo_title ?? 'Galen Official Store'))}}
+    {{$detailNews->translation->seo_title ?? ($detailNews->translation->news_title ?? ($settings->translation->seo_title ?? 'SachCuQuanTam'))}}
 @endsection
 
 @section('seo')
     <meta name="description" content="{{ $detailNews->translation->seo_description ?? ($settings->translation->seo_description ?? '') }}">
     <meta name="keywords" content="{{$detailNews->translation->seo_keywords ?? ($settings->translation->seo_keywords ?? '') }}">
     <meta property="og:image" content="{{asset($detailNews->news_image ?? ($settings->logo ?? 'assets/images/favicon.ico'))}}" />
-    <meta property="og:title" content="{{$detailNews->translation->seo_title ?? ($detailNews->translation->news_title ?? ($settings->translation->seo_title ?? 'Galen Official Store'))}}" />
-    <meta property="og:site_name" content="{{$settings->translation->seo_title ?? 'Galen Official Store'}}" />
+    <meta property="og:title" content="{{$detailNews->translation->seo_title ?? ($detailNews->translation->news_title ?? ($settings->translation->seo_title ?? 'SachCuQuanTam'))}}" />
+    <meta property="og:site_name" content="{{$settings->translation->seo_title ?? 'SachCuQuanTam'}}" />
     <meta property="og:description" content="{{$detailNews->translation->seo_description ?? ($settings->translation->seo_description ?? '')}}" />
 @endsection
 

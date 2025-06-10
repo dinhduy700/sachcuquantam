@@ -8,6 +8,8 @@ use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvi
 use Illuminate\Support\Facades\Event;
 use app\Events\SendMail;
 use app\Listeners\SendMailFired;
+use app\Events\NewUserRegistered;
+use app\Listeners\SendWelcomeEmail;
 
 class EventServiceProvider extends ServiceProvider
 {
@@ -23,6 +25,10 @@ class EventServiceProvider extends ServiceProvider
         'App\Events\SendMail' => [
             'App\Listeners\SendMailFired',
         ],
+        'App\Events\NewUserRegistered' => [
+            'App\Listeners\SendWelcomeEmail',
+        ],
+
     ];
 
     /**
@@ -35,6 +41,10 @@ class EventServiceProvider extends ServiceProvider
         Event::listen(
             SendMail::class,
             [SendMailFired::class, 'handle']
+        );
+        Event::listen(
+            NewUserRegistered::class,
+            [SendWelcomeEmail::class, 'handle']
         );
     }
 }
