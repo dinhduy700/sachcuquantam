@@ -9,7 +9,7 @@
   <label for="">Name</label>
 	<input type="text" name="name" />
 
-  <label for="">test CICD - 123</label>
+  <label for="">test CICD - 123 - 4</label>
 	<script src="http://127.0.0.1:8000/assets/libs/jquery/jquery.min.js"></script>
 </body>
 </html>
