@@ -1,4 +1,11 @@
-name: Demo workflows
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+jobs:
+  build:
+    runs-on: ubuntu-latestname: Demo workflows
 
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
