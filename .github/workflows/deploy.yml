@@ -4,5 +4,27 @@ on:
   push:
     branches: [main]
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
+    steps:
+      - name: Set up SSH private key
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        run: |
+          mkdir -p ~/.ssh
+          touch ~/.ssh/id_rsa
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+
+      - name: Deploy to Server
+        if: ${{ success() }}
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          port: 22
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd /var/www/html/sachcuquantam
+            git pull origin main
+            chown -R www-data:www-data /var/www/html/sachcuquantam
