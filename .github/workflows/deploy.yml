@@ -35,4 +35,3 @@ jobs:
           script: |
             cd /var/www/html/sachcuquantam
             git pull origin main
-            chown -R www-data:www-data /var/www/html/sachcuquantam
